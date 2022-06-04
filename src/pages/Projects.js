@@ -7,17 +7,17 @@ const Projects = () => {
         <section className={"section-projects"}  id={"section-projects"}>
             <h1 className={"section-title"}>My Projects</h1>
             <div className={"projects-container"}>
-                {projects.map((project) => {
-                    return <div className={"project-card"}>
-                        <div class={"project-image-wrapper"}>
+                {projects.map((project,index) => {
+                    return <div key={index} className={"project-card"}>
+                        <div className={"project-image-wrapper"}>
                             <img src={project.image} alt={project.name}/>
                         </div>
                         <div className={"project-info"}>
                             <h3>{project.name}</h3>
                             <p>Technologies Used : <span>{project.technologies}</span></p>
                             <ul>
-                                {project.description.map((desc)=> {
-                                    return <li>{desc}</li>
+                                {project.description.map((desc,index)=> {
+                                    return <li key={index}>{desc}</li>
                                 })}
                             </ul>
 

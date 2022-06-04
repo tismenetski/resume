@@ -6,8 +6,8 @@ const Skills = () => {
         <section className={"section-skills"}  id={"section-skills"}>
             <h1 className={"section-title"}>My Skills</h1>
             <div className={"skills-container"}>
-                {skills.map((skill)=> {
-                    return <div className={"skill"}>{skill.icon} <span>{skill.name}</span> </div>
+                {skills.map((skill,index)=> {
+                    return <div key={index} className={"skill"}>{skill.icon} <span>{skill.name}</span> </div>
                 })}
 
 
