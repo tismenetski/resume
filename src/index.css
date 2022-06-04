@@ -44,6 +44,44 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
+.dark-theme {
+
+}
+
+.light-theme {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+}
 /*
 =============== 
 Global Styles
@@ -368,7 +406,7 @@ About
 ===============
 */
 
-.section-about ,.section-skills {
+.section-about ,.section-skills , .section-contact {
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -461,6 +499,14 @@ Skills
   .section-about ,.section-skills {
     height: 100vh;
     /*height: auto;*/
+  }
+
+  .section-contact {
+    margin-top: 60px;
+  }
+
+  body .section-contact form {
+    width: 90%;
   }
 
   .section-projects {
@@ -598,3 +644,45 @@ Projects
   }
 }
 
+.section-contact .form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.section-contact form {
+  width: 25%;
+}
+
+.section-contact .form-group label {
+  color : var(--clr-grey-3);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.section-contact .form-group input,.section-contact .form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #9eb2c7;
+}
+
+
+
+.section-contact .form-group textarea {
+  height: 200px;
+  resize: none;
+}
+
+.form-submitted {
+  text-align: center;
+  font-size: 30px;
+
+
+}
+
+.form-submitted p {
+  color: var(--clr-primary-5);
+}

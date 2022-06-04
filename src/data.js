@@ -25,6 +25,12 @@ export const links = [
     text: 'projects',
     element: 'section-projects'
   },
+  {
+    id: 4,
+    url: '/contact',
+    text: 'contact',
+    element: 'section-contact'
+  },
   // {
   //   id: 4,
   //   url: '/contact',
